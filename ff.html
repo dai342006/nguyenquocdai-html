@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nguyễn Quốc Đại - Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #2ccc00;
+      --secondary-color: #a30000;
+      --text-color: #333333;
+      
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    main {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    img.avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--primary-color);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    img.avatar:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      font-size: 1.6em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.05em;
+    }
+
+    footer {
+      background-color: var(--footer-bg);
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.95em;
+      border-top: 1px solid #ccc;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    footer ul li a {
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    footer ul li a:hover {
+      text-decoration: underline;
+      color: var(--secondary-color);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      img.avatar {
+        width: 120px;
+        height: 120px;
+      }
+
+      .profile-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nguyễn Quốc Đại</h1>
+    <p>Sinh viên yêu thích công nghệ & lập trình</p>
+  </header>
+
+  <main>
+    <div class="profile-card">
+      <img src="https://bmpro.vn/wp-content/uploads/2021/11/hinh-23-1024x576.jpg" alt="Ảnh đại diện" class="avatar" />
+      <h2>Giới thiệu</h2>
+      <p>
+        Chào bạn! Mình là <strong>Đại</strong>, hiện đang học năm nhất ngành <strong>Công nghệ thông tin</strong>.
+        Mình yêu thích <em>bóng chuyền</em>, đam mê <em>lập trình</em> và thích khám phá các công nghệ mới.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Nguyễn Quốc Đại. All rights reserved.
+    <ul>
+      <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+      <li><a href="https://www.facebook.com/?ref=homescreenpwa" target="_blank">Facebook</a></li>
+      <li><a href="https://www.tiktok.com/@khm.ph.th.ng.vt" target="_blank">TikTok</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
